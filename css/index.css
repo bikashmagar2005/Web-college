@@ -1,3 +1,71 @@
-body{
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+}
+
+.logo1{
+    width: 80px;
+    height: 70px;
+    border: solid rgb(99, 63, 63);
+    border-radius: 50%;
+    margin-left: 2%;
+}
+
+.navbar{
+    align-items: center;
     background-color: red;
+    display: flex;
+    padding: 0.2%;
+}
+
+.lists{
+    display: flex;
+    width: 50%;
+   
+}
+
+.lists li{
+    list-style: none;
+    margin: 5%;
+}
+
+.lists li a{
+    color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 130%;
+    
+}
+
+.search_btn
+{
+    width: 50%;
+    text-align: right;
+}
+
+.search_btn .search-box1{
+    padding: 6px;
+    border-radius: 8px;
+    border: solid white;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+
+}
+
+.search_btn .search-btn1{
+    background-color: rgb(180, 185, 180);
+    padding: 6px;
+    border-radius: 6px;
+    margin-right: 8%;
+}
+
+.widge1{
+    height: 40px;
+    width: 40px;
+    margin-right: 2%;
 }
