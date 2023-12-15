@@ -1,82 +1,207 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
-
 *{
-    padding: 0%;
-    margin: 0%;
+    padding: 0px;
+    margin: 0px;
     text-decoration: none;
+    list-style: none;
 }
-
-.logo1{
-    width: 80px;
-    height: 70px;
-    border: solid rgb(99, 63, 63);
-    border-radius: 50%;
-    margin-left: 2%;
+body{
+    background-image: url(../images/smoke-1001664_1920.png);
 }
 
 .navbar{
-    align-items: center;
-    background-color: black;
-    display: flex;
-    padding: 0.2%;
-    position: fixed;
+    background-color: #000000;
     width: 100%;
-    border:transparent;
-    border-radius: 2px;
+    height: 150px;
 }
-
-.lists{
+/*lists first*/
+.lists-first{
     display: flex;
-    width: 50%;
-   
+    margin-left: 43%;
 }
 
-.lists li{
-    list-style: none;
-    margin: 5%;
-}
-
-.lists li a{
+.lists-first li a{
     color: rgb(255, 255, 255);
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    font-size: 130%;
-    
+    margin: 9px;
+    font-size: 14px;
+    animation: lists 6s linear 0s infinite;
 }
+@keyframes lists {
+    from {
+      color: #ebebf2;
+    }
+    10% {
+      color: #0099ff;
+    }
+    50% {
+      color: #e24000;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #e8c4cc;
+    }
+  }
 
-.search_btn
-{
-    width: 50%;
-    text-align: right;
-}
+/* .... */
 
-.search_btn .search-box1{
-    padding: 6px;
-    border-radius: 8px;
-    border: solid white;
-    padding-left: 5%;
-    padding-right: 5%;
-    text-align: center;
 
-}
-
-.search_btn .search-btn1{
-    background-color: rgb(180, 185, 180);
-    padding: 6px;
-    border-radius: 6px;
-    margin-right: 8%;
-}
-
-.widge1{
-    height: 40px;
+#main-logo{
     width: 40px;
-    margin-right: 2%;
+    height: 40px;
+    border-radius: 30px;
+    margin: 3px;
+    margin-bottom: -15px;
+    margin-left: 33%;
+
+}
+
+#main-searchbox{
+    padding: 6px;
+    width: 30%;
+    height: 30px;
+    position: relative;
+    border: solid white;
+    border-radius: 2px;
+    margin-right: -10px;
+    text-align: center;
+    border: none;
+}
+
+#search-btn1{
+    width: 40px;
+    height: 40px;
+    margin-top: 4px;
+    margin-bottom: -16.3px;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    display: inline-block;
+
 }
 
 
-.intro-part1{
+#sign-in_logo1{
+    color: red;
+
+}
+
+#login-btnn{
+    animation: login 6s linear 0s infinite;
+}
+
+@keyframes login {
+    from {
+      color: #0000c0;
+    }
+    10% {
+      color: #0099ff;
+    }
+    50% {
+      color: #e24000;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #030311;
+    }
+  }
+
+
+#login-btnnn{
+    animation: signin 6s linear 0s infinite;
+}
+
+@keyframes signin {
+    from {
+      color: #ff6666;
+    }
+    10% {
+      color: #ff5500;
+    }
+    50% {
+      color: #ffbf00;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #060303;
+    }
+  }
+
+.logos{
+    margin-top: -30px;
+    display: flex;
+    margin-left: 76%;
+    background-color: rgb(0, 0, 0);
+}
+
+
+#logo_sidepannel{
+    width: 30px;
+
+}
+
+#shadowBox{
+
+    width: 30%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 3px solid;
+    
+
+}
+
+@keyframes colorRotate {
+    from {
+      color: #6666ff;
+    }
+    10% {
+      color: #0099ff;
+    }
+    50% {
+      color: #00ff00;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #6666ff;
+    }
+  }
+
+.rainbow{
+
+    color: white;
+    margin-top: 13px;
+    /* font-size: 50px; */
+    /* font-family: cursive; */
+    font-weight: bold;
+
+    text-align: center;
+    font-size: 50px;
+    font-family: monospace;
+    letter-spacing: 5px;
+    animation: colorRotate 6s linear 0s infinite;
+
+}
+
+#colorElement{
+    background: rgb(86, 3, 0);
+    height: 3px;
     width: 100%;
-    height: 600px;
+}
+
+.snowman{
+    margin-top: -6%;
+    margin-left: 7%;
     background-color: black;
+}
+
+.snowman button{
+    background-color: black;
+    border: none;
+    border-radius: 50px;
 }

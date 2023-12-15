@@ -7,24 +7,101 @@
     <link rel="stylesheet" href="../css/index.css">
     <script src="../javascript/index.js"></script>
 </head>
-<body>
+<body >
+    
     <nav class="navbar">
-       <img src="../images/icon1.jpg" alt="logo1" class="logo1">
-        <ul class="lists">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Contact</a></li>
+
+        <ul class="lists-first">
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Help and Support</a></li>
+            <li><a href="#">Contact Info</a></li>
         </ul>
-        <div class="search_btn">
-        <input type="search" class="search-box1" placeholder="Type To Search">
-        <button class="search-btn1">Search</button>
+
+        <div class="searchboxwithclass">
+        <a href="#"><img src="../images/icons8-teaching-100.png" alt="logo1" id="main-logo"></a>
+        <input type="search" placeholder="Type To Search " id="main-searchbox">
+        <a href="#"><img src="../images/icons8-search-64.png" alt="search-btn" id="search-btn1"></a>  
+
+
+
+
+        <div class="logos">
+
+            <a href="#"><img src="../images/icons8-user-male-30.png" alt="sign-in logo" id="sign-in_logo1"></a>
+            <level style="margin-top: 5px; margin-left: 3px;"><font color="white" id="login-btnn">LogIn</font></level>
+
+
+            <font color="white" style="margin-left: 10px; margin-top: 3px;"> |</font>
+
+
+            <level style="margin-top: 5px; margin-left: 16px;"><font color="white" id="login-btnnn">SignIn</font></level>
+
+            <a href="#" style="margin-left: 30%; margin-right: 4%;"><img  src="../images/menu1.png" alt="logo" id="logo_sidepannel"></a>
+
+
+
+
+
+
+        </div>      
+
         </div>
-        <img src="../images/icon1.jpg" alt="widge" class="widge1">
+
+        <center>
+        <div id="shadowBox"> 
+            
+            <marquee behavior="scroll" direction="left" class="rainbow">National School Of Sciences</marquee>
+
+        </div>
+        </center>
+        
+        
+        <!-- snowman -->
+         <div class="snowman">
+        <button onclick="snowfall()" id="snowfalls"><img src="../images/icons8-snowman-64.png" alt=""></button>
+            
+        <script>
+            // JavaScript code for RGB color animation
+            const colorsElement = document.getElementById('snowfalls');
+          
+            function animateRGB() {
+              // Generate random RGB values
+              const newRed = Math.floor(Math.random() * 256);
+              const newGreen = Math.floor(Math.random() * 256);
+              const newBlue = Math.floor(Math.random() * 256);
+          
+              // Apply the new RGB color to the background
+              colorsElement.style.backgroundColor = `rgb(${newRed}, ${newGreen}, ${newBlue})`;
+            }
+          
+            // Set interval to change color every 2 seconds (2000 milliseconds)
+            setInterval(animateRGB, 2000);
+          </script>
+
+        </div>
+       
     </nav>
-    <div class="intro-part1">
-        <level></level>
-    </div>
-    <h1>addition</h1>
+   <div id="colorElement">
+    <script>
+        // JavaScript code for RGB color animation
+        const colorElement = document.getElementById('colorElement');
+      
+        function animateRGB() {
+          // Generate random RGB values
+          const newRed = Math.floor(Math.random() * 256);
+          const newGreen = Math.floor(Math.random() * 256);
+          const newBlue = Math.floor(Math.random() * 256);
+      
+          // Apply the new RGB color to the background
+          colorElement.style.backgroundColor = `rgb(${newRed}, ${newGreen}, ${newBlue})`;
+        }
+      
+        // Set interval to change color every 2 seconds (2000 milliseconds)
+        setInterval(animateRGB, 2000);
+      </script>
+   </div>
+
+
+
 </body>
 </html>
